@@ -12,6 +12,13 @@
     "build": "node tools/check.mjs",
     "test": "node --test test/*.test.mjs",
     "demo": "node tools/demo.mjs",
-    "verify": "node test/verify.mjs"
+    "rehearse": "node tools/rehearse.mjs",
+    "verify": "node test/verify.mjs",
+    "harvest:baseline": "node src/cli.mjs baseline",
+    "harvest:daily": "node src/cli.mjs daily",
+    "harvest:backfill": "node src/cli.mjs backfill",
+    "harvest:resume": "node src/cli.mjs resume",
+    "harvest:status": "node src/cli.mjs status",
+    "harvest:verify": "node src/cli.mjs verify"
   }
 }
